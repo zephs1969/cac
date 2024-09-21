@@ -38,7 +38,7 @@ Change Alacritty Colour is a [public repository][cac]  on GitHub.
 Download and copy the script into a folder included in $PATH and execute cac.sh -i to install.
 ### Scripted Procedure: 
 An existing alacritty.toml configuration will be saved as alacritty.toml.bak in /home/username/.config/alacritty. A new folder /home/username/.config/alacritty/themes/ will be created. Alacritty Themes are loaded from https://github.com/alacritty/alacritty-theme into /home/username/.config/alacritty/themes/ .
-On install the script will ask if you wish to save a new default or patch your current configuration.(/home/username/.config/alacritty/alacritty.toml).
+On install the script will ask if you wish to save a new default or patch your current configuration (/home/username/.config/alacritty/alacritty.toml).
 
 ## Usage
 Select a colour theme by index number (Idx.No.):
