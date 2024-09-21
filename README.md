@@ -1,9 +1,9 @@
 ﻿# [cac.sh][cac]
 ## bash script to [**c**hange **A**lacrittys **c**olour][cac] theme immediately
 
-- change from a bright to a dark theme with a touch of a button. 
-- explorer available Alacritty-themes on your screen 
-- test all available colour-combinations of fore- and background colours
+- change from a bright to a dark theme with a touch of a button
+- explorer available Alacritty-themes on your screen
+- test all colour-combinations of fore- and background colours on your screen with the current theme
 
 use with:
 
