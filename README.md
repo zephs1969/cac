@@ -47,7 +47,7 @@ Select a colour theme by index number (Idx.No.):
 ```
 Select a colour theme by filename from "/home/username/.config/alacritty/themes/themes/".:            
  ```sh
-    cac.sh "colour.toml" 
+    cac.sh "rainbow.toml" 
 ```                                   
 Save a script coded theme as (username.toml) in /home/username/.config/alacritty/themes/themes/ and then load it.
 ```sh
