@@ -379,9 +379,9 @@
 #Don't change the first line starting with 'import...' if you are useing the script 'cac.sh'
 import = ["~/.config/alacritty/themes/themes/rainbow.toml",]
 
-[colours]
+#[colors]
 
-#[colours.bright]
+#[colors.bright]
 #black = "#6c6823"
 #blue = "#477ca1"
 #cyan = "#75a738"
@@ -391,11 +391,11 @@ import = ["~/.config/alacritty/themes/themes/rainbow.toml",]
 #white = "#faf0a5"
 #yellow = "#a88339"
 
-#[colours.cursor]
+#[colors.cursor]
 #cursor = "#948e48"
 #text = "#201602"
 
-#[colours.normal]
+#[colors.normal]
 #black = "#201602"
 #blue = "#477ca1"
 #cyan = "#75a738"
@@ -405,12 +405,12 @@ import = ["~/.config/alacritty/themes/themes/rainbow.toml",]
 #white = "#948e48"
 #yellow = "#a88339"
 
-#[colours.primary]
+#[colors.primary]
 #background = "#201602"
 #foreground = "#948e48"
 
 [env]
-TERM = "xterm-256colour"
+TERM = "xterm-256color"
 
 #[font]
 #size = 15
@@ -484,12 +484,12 @@ EOF
     _fncCreateDefaultCS () {
         newUserTheme="${curThemesFolder}${1}"
         cat << 'EOF' > "$newUserTheme" 
-[colours]
-[colours.primary]
+[colors]
+[colors.primary]
 background = '#192835'
 foreground = '#AADA4F'
 
-[colours.normal]
+[colors.normal]
 black   = '#5B4375'
 red     = '#426bb6'
 green   = '#2286b5'
@@ -499,7 +499,7 @@ magenta = '#c6c842'
 cyan    = '#8a5135'
 white   = '#c54646'
 
-[colours.bright]
+[colors.bright]
 black   = '#5B4375'
 red     = '#426bb6'
 green   = '#2286b5'
@@ -509,7 +509,7 @@ magenta = '#c6c842'
 cyan    = '#8a5135'
 white   = '#c54646'
 
-[colours.cursor]
+[colors.cursor]
 cursor = "#948e48"
 text = "#201602"
 EOF
