@@ -1,53 +1,65 @@
-bash script to change Alacritty colours (cac.sh) immediately
-
-﻿cac.sh:         change alacrittys colours ()
+﻿cac.sh (change Alacrittys colours)
  
-How it works:   The script substitutes the 'colour.toml' filename in
-                home/username/.config/alacritty/alacritty.toml" import- statement.
-                The import-statement to load the colour theme should be the first line e.g.:
-                "import = [\"~/.config/alacritty/themes/themes/rainbow.toml\",]"
-                
-...             Alacritty changes the colour accordingly and is going to load the
-                corresponding file after alacritty.toml was updated by cac.sh.
-                The script downloads and install themes from git/alacritty-theme project.
-                An update of themes do not touch existing custom themes.
+Bash script to change Alacritty colours (cac.sh) immediately.
 
-Usage:          cac.sh Idx.No.       := Select a colour theme by index number (Idx.No.).
+INSTALL: Download and copy the script into a folder included in $PATH and execute
+cac.sh -i to install.
+ 
+HOW IT WORKS: The script substitutes the 'colour.toml' filename in home/username/.config/alacritty/alacritty.toml" import- statement. The import-statement to load the colour theme should be the first line e.g.:
 
-$               cac.sh "colour.toml"  := Select a colour theme by filename from
-                                        "/home/username/.config/alacritty/themes/themes/".
-                                        
-$               cac.sh -d, --default := Save & load a script coded theme as (username.toml)
-                                        in /home/username/.config/alacritty/themes/themes/.
-                                        
-$               cac.sh -h, --help    := Display and explain available options.
+                import = [\"~/.config/alacritty/themes/themes/rainbow.toml\",]
                 
-$               cac.sh -i, --install := Create the themes folder, download alacritty themes
-                                        and patch or create a configuration alacritty.toml.
-                                        
-$               cac.sh -l, --list    := List available themes with corresponding index no.
-$               cac.sh -p, --print   := Print sample text in colour combinations to check
-                                        the representation by current theme.
-                                        
-§               cac.sh -s, --save    := Save the current colour theme as (username.toml) in
-                                        "/home/username/.config/alacritty/themes/themes/".
-                                        
-$               cac.sh -t, --theme   := Print name "name.toml" of the active theme.
-                
-$               cac.sh -u, --update  := Download new colour themes from
-                                        https://github.com/alacritty/alacritty-theme
-                                        and keep your custom themes.
+Alacritty changes the colour accordingly and is going to load the corresponding file after alacritty.toml was updated by cac.sh. The script downloads and install themes from git/alacritty-theme project. An update of themes do not touch existing custom themes.
 
-Install:        Copy the script into a folder included in $PATH and execute
-                cac.sh -i
+USAGE:          
+Select a colour theme by index number (Idx.No.):
+ 
+    cac.sh Idx.No.
 
-Changes:        On install an existing alacritty.toml configuration will be
-                saved as alacritty.toml.bak in /home/username/.config/alacritty.                
-    new folder: mkdir -p /home/username/.config/alacritty/themes/
-    
-   load themes: git clone
-                https://github.com/alacritty/alacritty-theme
-                into /home/username/.config/alacritty/themes/
+Select a colour theme by filename from "/home/username/.config/alacritty/themes/themes/".:            
+ 
+    cac.sh "colour.toml" 
+                                        
+Save a script coded theme as (username.toml) in /home/username/.config/alacritty/themes/themes/ and then load it.
+
+    cac.sh -d
+    cac.sh --default
+
+Display and explain available options:
+
+    cac.sh -h
+    cac.sh --help
+
+Install - Create the themes folder, download alacritty themes
+and patch or create a configuration alacritty.toml.
+
+     cac.sh -i
+     cac.sh --install
+                                        
+List available themes with corresponding index no.
+
+    cac.sh -l
+    cac.sh --list
+
+ Print sample text in colour combinations to check the representation by current theme.
+ 
+    cac.sh -p
+    cac.sh --print
+                                        
+Save the current colour theme as (username.toml) in "/home/username/.config/alacritty/themes/themes/".
+
+    cac.sh -s
+    cac.sh --save
+                                        
+Print name "name.toml" of the active theme:
+
+    cac.sh -t
+    cac.sh --theme
                 
- AlacrittyCfg.: On install the script will ask if you wish to save a new default or patch
-                your current config.(/home/username/.config/alacritty/alacritty.toml).
+Download new colour themes from https://github.com/alacritty/alacritty-theme and keep your custom themes:
+
+    cac.sh -u
+    cac.sh --update
+
+INSTALL PROCEDURE: An existing alacritty.toml configuration will be saved as alacritty.toml.bak in /home/username/.config/alacritty. A new folder /home/username/.config/alacritty/themes/ will be created. Alacritty Themes are loaded from https://github.com/alacritty/alacritty-theme into /home/username/.config/alacritty/themes/ .
+On install the script will ask if you wish to save a new default or patch your current config.(/home/username/.config/alacritty/alacritty.toml).
