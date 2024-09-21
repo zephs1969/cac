@@ -31,7 +31,8 @@ Example of the import-statement to load a colour theme:
 ```sh
 import = [\"~/.config/alacritty/themes/themes/rainbow.toml\",]
 ```
-Alacritty changes the colour of the terminal accordingly and is going to load the corresponding file after alacritty.toml was updated by cac.sh. The script downloads and install themes from git/alacritty-theme project. An update of themes do not touch existing custom themes, if your files have a unique name.
+Alacritty changes the colour of the terminal accordingly and is going to load the corresponding file immediately after alacritty.toml was updated by cac.sh. 
+The script downloads and install themes from git/alacritty-theme project. An update of themes do not touch existing custom themes, if your files have a unique name.
 ## Installation
 Change Alacritty Colour is a [public repository][cac]  on GitHub.
 Download and copy the script into a folder included in $PATH and execute cac.sh -i to install.
