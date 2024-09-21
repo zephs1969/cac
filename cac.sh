@@ -176,7 +176,7 @@
         }
         
         _checkCFG () {
-            if ! which alacritty find git rsync sed > \dev\null; then
+            if ! which alacritty find git rsync sed > /dev/null; then
                 _echoerr "Dependencies - to use $strSCR \"alacritty\", \"find\", \"git\", \"rsync\" and \"sed\" have to be installed."
                 _zExit "1"
             fi
