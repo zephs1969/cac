@@ -1,4 +1,4 @@
-# [cac.sh][cac]
+﻿# [cac.sh][cac]
 ## bash script to [**c**hange **A**lacrittys **c**olour][cac] theme immediately
 
 use with:
@@ -8,7 +8,7 @@ use with:
 ...[Alacritty themes}: https://github.com/alacritty/alacritty-theme
 
 - change from a bright to a dark theme with a touch of a button. 
-- explorer avavilable Alacritty-themes on your screen 
+- explorer available Alacritty-themes on your screen 
 - test all available colour-combinations of fore- and background colours
 
 
@@ -16,18 +16,18 @@ use with:
 
 - Creates a basic Alacritty configuration
 - Patches a existing Alacritty configuration to load themes
-- Loads and updates avavilable themes from github
+- Loads and updates available themes from github
 - Switches to another theme
-- Prints text examples to test the readabillty
+- Prints text examples to test the readability
 
 ## Requirements
-Make sure that the following programms are installed:
+Make sure that the following programs are installed:
  [alacritty][Ate], [find][find], [git][git], [rsync][rsync] and [sed][sed]
 
 ## How it works
 
 The script substitutes the 'colour.toml' filename in the import-statement of the alacritty configuration file "home/username/.config/alacritty/alacritty.toml". 
-Example of teh import-statement to load a colour theme: 
+Example of the import-statement to load a colour theme: 
 ```sh
 import = [\"~/.config/alacritty/themes/themes/rainbow.toml\",]
 ```
@@ -37,7 +37,7 @@ Change Alacritty Colour is a [public repository][cac]  on GitHub.
 Download and copy the script into a folder included in $PATH and execute cac.sh -i to install.
 ### Scripted Procedure: 
 An existing alacritty.toml configuration will be saved as alacritty.toml.bak in /home/username/.config/alacritty. A new folder /home/username/.config/alacritty/themes/ will be created. Alacritty Themes are loaded from https://github.com/alacritty/alacritty-theme into /home/username/.config/alacritty/themes/ .
-On install the script will ask if you wish to save a new default or patch your current config.(/home/username/.config/alacritty/alacritty.toml).
+On install the script will ask if you wish to save a new default or patch your current configuration.(/home/username/.config/alacritty/alacritty.toml).
 
 ## Usage
 Select a colour theme by index number (Idx.No.):
@@ -64,8 +64,8 @@ Display and explain available options:
 ```sh
     cac.sh --help
 ```
-Install proc. create the themes folder, download alacritty themes
-and patch or create a configuration alacritty.toml.
+Install procedure creates the themes folder, downloads the alacritty themes
+and patch or creates a configuration alacritty.toml file.
 ```sh
      cac.sh -i
 ```
@@ -81,7 +81,7 @@ List available themes with corresponding index no.
  ```sh  
     cac.sh --list
 ```
- Print sample text in colour combinations to check the representation by current theme.
+ Print sample text in colour combinations to check the representation by the current theme.
  ```sh
     cac.sh -p
 ```
