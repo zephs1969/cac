@@ -1,15 +1,15 @@
 ﻿# [cac.sh][cac]
 ## bash script to [**c**hange **A**lacrittys **c**olour][cac] theme immediately
 
+- change from a bright to a dark theme with a touch of a button. 
+- explorer available Alacritty-themes on your screen 
+- test all available colour-combinations of fore- and background colours
+
 use with:
 
 ...[Alacritty terminal emulator]: https://github.com/alacritty/alacritty
 
-...[Alacritty themes}: https://github.com/alacritty/alacritty-theme
-
-- change from a bright to a dark theme with a touch of a button. 
-- explorer available Alacritty-themes on your screen 
-- test all available colour-combinations of fore- and background colours
+...[Alacritty themes]: https://github.com/alacritty/alacritty-theme
 
 
 ## Features
@@ -31,7 +31,7 @@ Example of the import-statement to load a colour theme:
 ```sh
 import = [\"~/.config/alacritty/themes/themes/rainbow.toml\",]
 ```
-Alacritty changes the colour of the terminal accordingly and is going to load the corresponding file immediately after alacritty.toml was updated by cac.sh. 
+Alacritty changes the colour of the terminal accordingly and is going to load the corresponding theme file immediately after alacritty.toml was updated by cac.sh. 
 The script downloads and install themes from git/alacritty-theme project. An update of themes do not touch existing custom themes, if your files have a unique name.
 ## Installation
 Change Alacritty Colour is a [public repository][cac]  on GitHub.
