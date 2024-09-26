@@ -1,9 +1,10 @@
 ﻿# [cac.sh][cac]
-## bash script to [**c**hange **A**lacrittys **c**olour][cac] theme immediately
+## bash script to [**c**hange **A**lacrittys **c**olour][cac] theme on the fly 
 
-- change from a bright to a dark theme with a touch of a button
+- change from a bright to a dark theme with a touch of a button 
 - explorer available Alacritty-themes on your screen
 - test all colour-combinations of fore- and background colours on your screen with the current theme
+- works with toml configuration files
 
 use with:
 
@@ -14,8 +15,8 @@ use with:
 
 ## Features
 
-- Creates a basic Alacritty configuration
-- Patches a existing Alacritty configuration to load themes
+- Creates a basic Alacritty toml configuration file
+- Patches a existing Alacritty toml configuration to load themes
 - Loads and updates available themes from github
 - Switches to another theme
 - Prints text examples to test the readability
