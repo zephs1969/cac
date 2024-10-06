@@ -59,7 +59,7 @@ On install the script will ask if you wish to save a new default or patch your c
 ## Usage
 Select a colour theme by index number (Idx.No.):
 ```sh 
-    cac.sh 1
+    cac.sh 9
 ```
 Select a colour theme by filename from "/home/username/.config/alacritty/themes/themes/".:            
  ```sh
