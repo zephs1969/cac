@@ -25,7 +25,8 @@ use with:
 Make sure that the following programs are installed:
  [alacritty][Ate], [find][find], [git][git], [rsync][rsync] and [sed][sed]
 
- Path to the alacritty config file is:
+ Path to the Alacritty config file is:
+
     $HOME/.config/alacritty/alacritty.toml
 
 ## How it works
