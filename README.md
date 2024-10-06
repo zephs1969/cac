@@ -39,13 +39,20 @@ import = [\"~/.config/alacritty/themes/themes/rainbow.toml\",]
 Alacritty changes the colour of the terminal accordingly and is going to load the corresponding theme file immediately after alacritty.toml was updated by cac.sh. 
 The script downloads and install themes from git/alacritty-theme project. An update of themes do not touch existing custom themes, if your files have a unique name.
 ## Installation
-Change Alacritty Colour is a [public repository][cac]  on GitHub.
-Download and copy the script into a folder included in $PATH and execute... 
+"Change Alacritty Colour" is a [public repository][cac]  on GitHub.
+Download the script: 
+```sh
+git clone https://github.com/zephs1969/cac.git ./cac
+```
+Copy the script to a Path included in $PATH - for example:
+```sh
+cp ./cac/cac.sh $HOME/bin/
+```
+Install the script: 
 ```sh
 cac.sh -i
 ```
-...to install.
-### Scripted Procedure: 
+### Scripted Procedure to install: 
 An existing alacritty.toml configuration will be saved as alacritty.toml.bak in /home/username/.config/alacritty. A new folder /home/username/.config/alacritty/themes/ will be created. Alacritty Themes are loaded from https://github.com/alacritty/alacritty-theme into /home/username/.config/alacritty/themes/ .
 On install the script will ask if you wish to save a new default or patch your current configuration (/home/username/.config/alacritty/alacritty.toml).
 
