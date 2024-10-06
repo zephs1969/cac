@@ -25,6 +25,9 @@ use with:
 Make sure that the following programs are installed:
  [alacritty][Ate], [find][find], [git][git], [rsync][rsync] and [sed][sed]
 
+ Path to the alacritty config file is:
+    $HOME/.config/alacritty/alacritty.toml
+
 ## How it works
 
 The script substitutes the 'colour.toml' filename in the import-statement of the alacritty configuration file "home/username/.config/alacritty/alacritty.toml". 
