@@ -81,7 +81,7 @@
             exitCode=${1:-0}
             printf "Usage %s: \n" "$strSCR" 
             printf "      %s %s\n" "$strSCR" "Idx.No.       := To select a colour theme by index number (Idx.No.)."
-            printf "      %s %s\n" "$strSCR" "\"colour.toml\"  := To select a colour theme by filename from \"$curThemesFolder\"."
+            printf "      %s %s\n" "$strSCR" "\"colour.toml\" := To select a colour theme by filename from \"$curThemesFolder\"."
             printf "      %s %s\n" "$strSCR" "-d, --default := To save & load a script coded colour theme as (${curUSER}.toml) in \"$curThemesFolder\"."
             printf "      %s %s\n" "$strSCR" "-h, --help    := To display and explain available options." 
             printf "      %s %s\n" "$strSCR" "-i, --install := To create the themes folder, download alacritty themes and patch or create a configuration (alacritty.toml)."
