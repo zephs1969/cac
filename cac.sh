@@ -1,4 +1,4 @@
-    #!/bin/bash
+#!/bin/bash
 
     # Comments ###################################################################################
     #                                                                                            #
@@ -68,7 +68,7 @@
     #                                                                                                            #
     #                                                                                                            #
     ##############################################################################################################
-    version="0.1b"
+    #version="0.1b"
     #C Name of the script file
     strSCR=cac.sh
     #                                                                                                            #
@@ -108,7 +108,7 @@
             shopt -u extglob
             #printf "%s terminates.\n" $strSCR
             exit "$exitCode"
-            kill -s TERM "$TOP_PID"
+            #kill -s TERM "$TOP_PID"
         }
         _echoerr () {
             printf "%s\n" "${strSCR} Error: $*" >&2
@@ -216,9 +216,10 @@
         }
         
         _curColorTheme () {
-            zTest=$(sed -n '/^import/{p;q;}' "$curCfgFile"); 
+            zTest=$(sed -n '/^import/{p;q;}' "$curCfgFile");
+            cErr=$? 
             if [[ -z $zTest ]]; then 
-                _echoerr "Err. No. $? while trying to read first import statement with coresponding colour.toml in $curCfgFile"
+                _echoerr "Err. No. $cErr while trying to read first import statement with coresponding colour.toml in $curCfgFile"
                 _zExit "1"
             fi
             zTest=${zTest##*/} ;
@@ -274,7 +275,7 @@
             }
             
         _availThemes () {
-            read -r -a matAvailThemes <<< "$(find $curThemesFolder  -type f -iname *.toml -exec basename  '{}' ';' | nl -v 0 | tr -d '\n' | tr '\t' ' ')"
+            read -r -a matAvailThemes <<< "$(find "$curThemesFolder"  -type f -iname "*.toml" -exec basename  '{}' ';' | nl -v 0 | tr -d '\n' | tr '\t' ' ')"
             if [[ ${#matAvailThemes[@]} -le 0 ]]; then
                 _echoerr "There are no themes in ${curThemesFolder}."
                 _zExit "1"
@@ -306,7 +307,7 @@
         
         _updateThemes () {
              if [[ $(_ask "Do you want to merge your existing themes-folder with a fresh copy from git?") == "0" ]]; then
-                    if mv ${curGitFolder%/*}{,_bak}; then
+                    if mv "${curGitFolder%/*}"{,_bak}; then
                         printf "A backup was created as %s_bak/themes/.\n" "${curGitFolder%/*}"
                     else 
                         _echoerr "Err.No.: $? - failed to create backup of themes-folder."
