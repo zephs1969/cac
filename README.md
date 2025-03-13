@@ -55,7 +55,7 @@ Install the script:
 ```sh
 cac.sh -i
 ```
-### How it works: 
+### scripted install procedure: 
 An existing alacritty.toml configuration will be saved as alacritty.toml.bak in /home/username/.config/alacritty. A new folder /home/username/.config/alacritty/themes/ will be created. Alacritty Themes are loaded from https://github.com/alacritty/alacritty-theme into /home/username/.config/alacritty/themes/ .
 On install the script will ask if you wish to save a new default or patch your current configuration (/home/username/.config/alacritty/alacritty.toml).
 
