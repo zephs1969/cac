@@ -22,6 +22,7 @@ use with:
 - Prints text examples to test the readability
 
 ## Requirements
+**** TESTED WITH FEDORA & BASH SHELL ****
 Make sure that the following programs are installed:
  [alacritty][Ate], [find][find], [git][git], [rsync][rsync] and [sed][sed]
 
